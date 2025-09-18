@@ -10,15 +10,16 @@ assignees: []
 ======================== ガイド（作成後も残してOK） ========================
 
 ■ タイトルの付け方（例）
-  - 💡 feat: 匿名コメントの作成APIを追加
-  - 🧹 chore: Render で Web サービス作成（Auto Deploy OFF）
-  - 📝 docs: README に ER 図へのリンクを追加
-  - 🐛 bug: コメントの表示がおかしい
-  - ♻️ refactor: CommentsController のサービス分離
-  - 🚀 perf: コメント取得のキャッシュを追加、コメント一覧APIでN+1解消
-  - 🧪 test: Comments API のリクエストスペック追加
-  - 🛠️ ci: GitHub Actions でRubocopを実行
-  - 🏗️ build: Dockerfile を production 用に調整
+  - 💡 feat: 新機能/匿名コメントの作成APIを追加
+  - 🧹 chore: 雑務/Render で Web サービス作成（Auto Deploy OFF）
+  - 📝 docs: ドキュメント/README に ER 図へのリンクを追加
+  - 🐛 bug: バグ修正/コメントの表示がおかしい
+  - ♻️ refactor: 挙動を変えない中身の整理/CommentsController のサービス分離
+  - ⚡ perf: パフォーマンス改善/コメント取得のキャッシュを追加、コメント一覧APIでN+1解消
+  - 🧪 test: テスト/Comments API のリクエストスペック追加
+  - 🛠️ ci: CI関連(ワークフロー修正等)/GitHub Actions でRubocopを実行
+  - 🏗️ build: ビルドデプロイ設定/Dockerfile を production 用に調整
+  - 🚀 epic: MVPリリース/大目標/まとまり
 
 ■ ブランチ名の付け方（kebab-case）
   - feat/comments-create-endpoint
@@ -60,6 +61,26 @@ CI定義？ → ci
 セキュリティ目的が主？ → security
 インフラ（Render/DB/監視）？ → infra
 上記どれでもない雑務・運用設定 → chore
+
+⭐️ラベル設計（type / area / priority）
+type: epic / feature / bug / refactor / perf / docs / test / chore / ci / build
+area: api / extension / frontend / backend / db / infra（必要に応じて追加）
+priority: P0 / P1 / P2（P0=今すぐ、P1=今週、P2=来週以降）
+迷ったら：
+親イシュー → type: epic だけ付ける
+子イシュー → type:* ＋ area:* ＋ priority:*
+
+⭐️Projects（Tableビュー）の列
+Title（自動）
+Status：Todo / In progress / In review / Done
+Priority：P0 / P1 / P2
+Assignee
+Milestone（例：MVP v0.1）
+（余裕が出たら）Size：S / M / L
+4) エピック（親）と子のつなぎ方
+親（epic: 🚀）の本文にチェックリストで子を列挙
+子イシューの本文の先頭に Parent: #<親番号> を1行入れる
+PR本文には Closes #<子番号> を入れて自動クローズ
 =======================================================================
 -->
 
