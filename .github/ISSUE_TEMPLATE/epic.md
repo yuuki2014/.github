@@ -1,7 +1,7 @@
 ---
-name: "Epic / ロードマップ（親イシュー）"
+name: "🚀Epic / ロードマップ（親イシュー）"
 about: "大きな目標（MVP/大機能）を管理する親イシュー"
-title: "epic: 🚀 <MVP/大機能の名前> — <短い要約>"
+title: "🚀epic: <MVP/大機能の名前> — <短い要約>"
 labels: ["type: epic", "priority: P1"]
 ---
 
