@@ -1,0 +1,31 @@
+version: 2
+updates:
+  - package-ecosystem: "bundler"
+    directory: "/"
+    schedule:
+      interval: "weekly"          # 週1で十分
+    open-pull-requests-limit: 5
+    allow:
+      - dependency-type: "direct" # 直依存だけ
+    ignore:
+      - dependency-name: "*"      # デフォは無視して…
+        update-types: ["version-update:semver-major"]  # メジャーは除外
+    groups:
+      security-patches:
+        applies-to: security-updates
+        patterns: ["*"]
+
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    allow:
+      - dependency-type: "direct"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+    groups:
+      security-patches:
+        applies-to: security-updates
+        patterns: ["*"]
