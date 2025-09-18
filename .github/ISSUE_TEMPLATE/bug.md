@@ -1,7 +1,7 @@
 ---
-name: Bug(自由記入)
+name: 🐛バグ報告(自由記述)
 about: 不具合報告
-title: "bug: "
+title: "🐛bug: "
 labels: ["bug"]
 assignees: []
 ---
