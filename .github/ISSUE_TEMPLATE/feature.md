@@ -18,7 +18,8 @@ assignees: []
   - ⚡ perf: パフォーマンス改善/コメント取得のキャッシュを追加、コメント一覧APIでN+1解消
   - 🧪 test: テスト/Comments API のリクエストスペック追加
   - 🛠️ ci: CI関連(ワークフロー修正等)/GitHub Actions でRubocopを実行
-  - 🏗️ build: ビルドデプロイ設定/Dockerfile を production 用に調整
+  - 📦 build: ビルド設定/Dockerfile / docker-compose を整える、Rails をローカルで立ち上げる
+  - 🏗️ infra: Render へデプロイ、DB/ストレージ等の外部サービス設定
   - 🚀 epic: MVPリリース/大目標/まとまり
 
 ■ ブランチ名の付け方（kebab-case）
