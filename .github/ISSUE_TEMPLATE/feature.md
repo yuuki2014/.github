@@ -13,9 +13,9 @@ assignees: []
   - 💡 feat: 匿名コメントの作成APIを追加
   - 🧹 chore: Render で Web サービス作成（Auto Deploy OFF）
   - 📝 docs: README に ER 図へのリンクを追加
-  - 🐛 fix: コメント一覧APIでN+1解消
+  - 🐛 bug: コメントの表示がおかしい
   - ♻️ refactor: CommentsController のサービス分離
-  - 🚀 perf: コメント取得のキャッシュを追加
+  - 🚀 perf: コメント取得のキャッシュを追加、コメント一覧APIでN+1解消
   - 🧪 test: Comments API のリクエストスペック追加
   - 🛠️ ci: GitHub Actions でRubocopを実行
   - 🏗️ build: Dockerfile を production 用に調整
