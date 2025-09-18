@@ -1,6 +1,6 @@
 ---
-name: Feature
-about: 機能追加
+name: "💡 機能追加（Feature）"
+about: "ユーザーに価値が見える変更全般（API/UI/DB 追加など）"
 title: "feature: "
 labels: ["feature"]
 assignees: []
