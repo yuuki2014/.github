@@ -1,7 +1,7 @@
 ---
 name: "💡 機能追加（Feature）"
 about: "ユーザーに価値が見える変更全般（API/UI/DB 追加など）"
-title: "feature: "
+title: "💡 feat: "
 labels: ["feature"]
 assignees: []
 ---
@@ -10,15 +10,15 @@ assignees: []
 ======================== ガイド（作成後も残してOK） ========================
 
 ■ タイトルの付け方（例）
-  - feat: 匿名コメントの作成APIを追加
-  - chore: Render で Web サービス作成（Auto Deploy OFF）
-  - docs: README に ER 図へのリンクを追加
-  - fix: コメント一覧APIでN+1解消
-  - refactor: CommentsController のサービス分離
-  - perf: コメント取得のキャッシュを追加
-  - test: Comments API のリクエストスペック追加
-  - ci: GitHub Actions でRubocopを実行
-  - build: Dockerfile を production 用に調整
+  - 💡 feat: 匿名コメントの作成APIを追加
+  - 🧹 chore: Render で Web サービス作成（Auto Deploy OFF）
+  - 📝 docs: README に ER 図へのリンクを追加
+  - 🐛 fix: コメント一覧APIでN+1解消
+  - ♻️ refactor: CommentsController のサービス分離
+  - 🚀 perf: コメント取得のキャッシュを追加
+  - 🧪 test: Comments API のリクエストスペック追加
+  - 🛠️ ci: GitHub Actions でRubocopを実行
+  - 🏗️ build: Dockerfile を production 用に調整
 
 ■ ブランチ名の付け方（kebab-case）
   - feat/comments-create-endpoint
