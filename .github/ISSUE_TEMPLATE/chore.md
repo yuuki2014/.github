@@ -1,7 +1,7 @@
 ---
-name: Chore
+name: 🧹Chore
 about: 設定変更・運用整備・リポジトリ衛生など（挙動を変えない作業）
-title: "chore: "
+title: "🧹chore: "
 labels: ["chore"]
 assignees: []
 ---
