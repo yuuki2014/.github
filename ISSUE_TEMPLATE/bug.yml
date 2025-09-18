@@ -1,0 +1,55 @@
+name: Bug
+description: 不具合報告
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 事象
+      description: 何が起きましたか？
+      placeholder: 例）匿名コメント投稿で 500 が発生
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順
+      description: 手順を番号で書いてください
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待する結果
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 実際の結果（スクショ/ログ）
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: 影響度
+      options: ["blocker", "high", "medium", "low"]
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: 確認URL（あれば）
+      placeholder: https://render.app/...
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 確認済み
+      options:
+        - label: 最新の main で再現することを確認しました
+          required: true
+        - label: キャッシュ/拡張を切ったブラウザでも再現しました
