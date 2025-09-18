@@ -1,5 +1,5 @@
 ---
-name: Bug
+name: Bug(自由記入)
 about: 不具合報告
 title: "bug: "
 labels: ["bug"]
