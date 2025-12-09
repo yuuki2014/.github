@@ -1,7 +1,7 @@
 ---
 name: 卒制タスク
 about: 卒業制作タスク用テンプレート
-title: "[Sotsusei] "
+title: ""
 labels: ["sotsusei"]
 assignees: []
 ---
